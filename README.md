@@ -17,5 +17,6 @@ Adding a message to Discord when your stream goes live
 3. In the Applet body section place the JSON code below. Edits can be made to the code, you can add more text and info to your post. Follow the template below as a guide and look for Discords CSS for tips on what you can and cant add.
 
 BODY:
+
 { "content": "{{ChannelName}} went live on Twitch", "embeds": [{ "title": "{{ChannelUrl}}", "url": "{{ChannelUrl}}", "color": 6570404, "footer": { "text": "{{CreatedAt}}" }, "image": { "url": "{{StreamPreview}}" }, "author": { "name": "{{ChannelName}} is now streaming" }, "fields": [ { "name": "Playing", "value": "{{Game}}", "inline": true }, { "name": "Started at (streamer timezone)", "value": "{{CreatedAt}}", "inline": true } ] }] }
 
